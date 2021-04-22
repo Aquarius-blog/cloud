@@ -24,6 +24,7 @@
       <module>cloud-common</module>
       <module>cloud-gateway</module>
       <module>cloud-module</module>
+      <module>cloud-feign-api</module>
     </modules>
 
     <dependencies>
