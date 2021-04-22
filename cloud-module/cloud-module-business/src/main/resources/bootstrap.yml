@@ -1,5 +1,5 @@
 server:
-  port: 7071 # 端口
+  port: 6003 # 端口
 
 spring:
   application:

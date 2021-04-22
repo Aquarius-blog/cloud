@@ -15,4 +15,12 @@
 
     <name>cloud-module-system</name>
 
+    <!--    内部依赖-->
+    <dependencies>
+        <dependency>
+            <groupId>com.cy.cloud.feign</groupId>
+            <artifactId>cloud-feign-api</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+    </dependencies>
 </project>

@@ -17,6 +17,7 @@
     </modules>
     <name>cloud-module</name>
     <description>cloud-module</description>
+
     <dependencies>
         <dependency>
             <groupId>com.cy.cloud.common</groupId>

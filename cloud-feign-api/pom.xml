@@ -12,6 +12,22 @@
     <groupId>com.cy.cloud.feign</groupId>
     <artifactId>cloud-feign-api</artifactId>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
     <name>cloud-feign-api</name>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.cy.cloud.common</groupId>
+            <artifactId>cloud-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
