@@ -18,7 +18,7 @@
     <properties>
         <fastjson.version>1.2.75</fastjson.version>
     </properties>
-    <!--子模块的个性化依赖-->
+    <!--子模块的个性化依赖 -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
