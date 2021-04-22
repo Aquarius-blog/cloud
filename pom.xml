@@ -6,7 +6,7 @@
     <parent>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-parent</artifactId>
-      <version>2.3.2.RELEASE</version>
+        <version>2.3.4.RELEASE</version>
       <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.cy.cloud</groupId>
@@ -33,5 +33,23 @@
         <artifactId>lombok</artifactId>
       </dependency>
     </dependencies>
+
+    <!--Spring Cloud 版本序列配置-->
+    <!--
+        <dependencyManagement>标签用来管理依赖版本号，子项目引入此依赖无需显示列出版本号，
+        Maven会沿着父子层级向上寻找拥有dependencyManagement 元素的项目，然后使用它指定的版本号，
+        dependencyManagement中定义的只是依赖的声明，并不实现引入，因此子项目需要显式的声明需要用的依赖。
+    -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

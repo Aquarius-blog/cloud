@@ -1,9 +1,9 @@
 server:
-  port: 6002
+  port: 6001
 
 spring:
   application:
-    name: cloud-module-system # 应用名称
+    name: cloud-gateway
   cloud:
     nacos:
       discovery:
@@ -20,3 +20,9 @@ spring:
           data-id: common.yml
           group: DEFAULT_GROUP
           refresh: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          # 服务名小写
+          lower-case-service-id: true
