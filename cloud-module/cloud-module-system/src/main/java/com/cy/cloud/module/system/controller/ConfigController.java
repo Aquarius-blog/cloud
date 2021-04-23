@@ -2,6 +2,7 @@ package com.cy.cloud.module.system.controller;
 
 import com.cy.cloud.feign.api.BusinessFeignClient;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,10 +13,10 @@ import java.util.Map;
 
 @RefreshScope
 @RestController
-@RequiredArgsConstructor
 public class ConfigController {
 
-    final BusinessFeignClient businessFeignClient;
+    @Autowired
+    BusinessFeignClient businessFeignClient;
 
     @Value("${project.name:}")
     private String projectName;
