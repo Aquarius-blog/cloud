@@ -1,4 +1,4 @@
-package com.cy.cloud.module.business.controller;
+package com.cy.cloud.module.business.controller.api;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,6 +9,8 @@ public class BusinessApiController {
 
     @RequestMapping("test")
     String test(){
+
+
         return "business来了";
     }
 }
