@@ -2,7 +2,7 @@ package com.cy.cloud.module.system.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.cy.cloud.module.system.entity.UserEntity;
+import com.cy.cloud.feign.entity.UserEntity;
 import com.cy.cloud.module.system.service.IUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

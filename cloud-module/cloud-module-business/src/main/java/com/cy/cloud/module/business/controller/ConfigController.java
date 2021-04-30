@@ -2,6 +2,7 @@ package com.cy.cloud.module.business.controller;
 
 import com.cy.cloud.feign.api.BusinessFeignClient;
 import com.cy.cloud.feign.api.SystemFeignClient;
+import com.cy.cloud.feign.entity.UserEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @RefreshScope
@@ -40,5 +42,11 @@ public class ConfigController {
         String test = systemFeignClient.test();
         System.out.println(test);
         return test;
+    }
+
+    @GetMapping("selectList")
+    public List<UserEntity> selectList(){
+        List<UserEntity> userEntities = systemFeignClient.selectList();
+        return userEntities;
     }
 }

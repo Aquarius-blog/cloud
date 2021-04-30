@@ -1,4 +1,4 @@
-package com.cy.cloud.module.system.entity;
+package com.cy.cloud.feign.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
