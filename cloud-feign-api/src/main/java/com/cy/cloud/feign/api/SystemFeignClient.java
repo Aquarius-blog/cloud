@@ -10,13 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Component
-@FeignClient(name = "cloud-module-system")
-@RequestMapping("system")
+@FeignClient(name = "cloud-module-system",path = "/system")
 public interface SystemFeignClient {
 
-    @GetMapping("api/test")
-    String test();
-
-    @GetMapping("api/selectList")
-    List<UserEntity> selectList();
+    @GetMapping("api/get")
+    String get();
 }

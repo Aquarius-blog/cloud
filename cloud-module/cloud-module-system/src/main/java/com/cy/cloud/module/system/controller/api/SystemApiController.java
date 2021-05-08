@@ -19,10 +19,9 @@ public class SystemApiController {
     @Autowired
     IUserService userService;
 
-    @GetMapping("selectList")
-    public List<UserEntity> selectList(){
-        log.info("=======selectList=====");
-        List<UserEntity> userEntitieList = userService.selectList();
-        return userEntitieList;
+
+    @GetMapping("get")
+    String get(){
+        return "get...";
     }
 }

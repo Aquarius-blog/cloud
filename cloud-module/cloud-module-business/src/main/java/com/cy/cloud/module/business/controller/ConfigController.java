@@ -37,16 +37,16 @@ public class ConfigController {
         return configMap;
     }
 
-    @GetMapping("test")
-    public String test(){
-        String test = systemFeignClient.test();
+    @GetMapping("get")
+    public String get(){
+        String test = systemFeignClient.get();
         System.out.println(test);
         return test;
     }
-
-    @GetMapping("selectList")
-    public List<UserEntity> selectList(){
-        List<UserEntity> userEntities = systemFeignClient.selectList();
-        return userEntities;
-    }
+//9
+//    @GetMapping("selectList")
+//    public List<UserEntity> selectList(){
+//        List<UserEntity> userEntities = systemFeignClient.selectList();
+//        return userEntities;
+//    }
 }

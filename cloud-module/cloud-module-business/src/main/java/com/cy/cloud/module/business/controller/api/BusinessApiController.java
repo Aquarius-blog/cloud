@@ -9,8 +9,6 @@ public class BusinessApiController {
 
     @RequestMapping("test")
     String test(){
-
-
         return "business来了";
     }
 }
